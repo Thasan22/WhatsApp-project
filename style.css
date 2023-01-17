@@ -1,0 +1,492 @@
+/* common css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1080px;
+    margin: auto;
+    position: relative;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: arial;
+    background-color: #fcf5eb;
+}
+.button{
+    background-color: #25d366;
+    color: #1c1e21;
+    padding: 16px 28px;
+    font-size: 16px;
+    border: 1px solid #1c1e21;
+    border-radius: 40px;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+}
+.button::before{
+    content: "";
+    position: absolute;
+    background-color: #111 !important;
+    width: 100% !important;
+    height: 80px !important;
+    border-radius: 50%;
+    top: 100%;
+    bottom: auto;
+    z-index: -1;
+    left: 0;
+    transition: 0.5s !important;
+}
+.button:hover{
+    color: white;
+}
+.button:hover::before{
+    top: 0;
+    transform: scale(1.5);
+}
+
+.align-center{
+    align-items: center;
+}
+
+.learn_more{
+    color: #111;
+}
+.learn_more:hover{
+    color: #25d366;
+}
+
+.learn_more .link_design{
+    position: relative;
+}
+
+.learn_more .link_design::after{
+   content: "";
+   width: 100%;
+   height: 2px;
+   background-color: #25d366;
+   position: absolute;
+   bottom: -5px;
+   left: 0;
+}
+/* common css ends */
+nav{
+    padding: 30px 50px 40px 50px;
+}
+nav .logo,
+nav .menu,
+nav .download_button{
+    width: 33.33%;
+}
+
+nav .logo img{
+    width: 130px;
+}
+
+nav .menu ul li,
+nav .download_button ul li{
+    display: inline-block;
+}
+
+div .download_button ul li a,
+nav .menu ul li a{
+    color: #1c1e21;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0px 10px;
+    position: relative;
+    display: block;
+}
+div .download_button ul li a::before,
+nav .menu ul li a::before{
+    content: "";
+    width: 0px;
+    height: 2px;
+    background-color: #25d366;
+    position: absolute;
+    bottom: -4px;
+    left: 0px;
+    transition: 0.3s;
+}
+div .download_button ul li:hover a::before,
+nav .menu ul li:hover a::before{
+    width: 100%;
+}
+
+div .download_button ul{
+    text-align: right;
+}
+
+nav .download_button ul{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Banner starts */
+#banner{
+    background-image: url(./img1.png);
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: calc(100% - 100px);
+    margin: auto;
+    border-radius: 35px;
+    position: relative;
+}
+
+#banner .row{
+    height: 750px;
+}
+
+.banner_cnt{
+    width: 30%;
+    color: white;
+}
+
+.banner_cnt h2{
+    font-size: 70px;
+    font-weight: 300;
+    
+}
+
+.banner_cnt p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.banner_cnt .button::before{
+    background-color: white !important;
+}
+
+.banner_cnt .button{
+    border: none;
+}
+
+.banner_cnt .button:hover{
+    color: black;
+}
+.button span,
+.banner_cnt .button span{
+    margin-left: 10px;
+}
+
+
+
+.banner_float_images{
+    position: absolute;
+}
+
+.cup_img{
+    top: 170px;
+    right: 100px;
+}
+
+.record{
+    top: 300px;
+    right: 100px;
+}
+
+.text1{
+    top: 100px;
+    right: 100px;
+}
+
+.love{
+    top: 130px;
+    right: 100px;
+}
+
+.pic{
+    top: 380px;
+    right: 100px;
+}
+
+.text2{
+    top: 650px;
+    right: 150px;
+}
+
+#banner2{
+    background-size: cover;
+    width: calc(100% - 100px);
+    margin: auto;
+}
+
+#banner2 p{
+    font-size: 38px;
+    text-align: center;
+}
+/* Banner ends */
+
+#conference .conference_txt,
+#conference .conference_img{
+    width: 50%;
+}
+#conference .conference_img{
+    text-align: center;
+}
+#conference{
+    padding: 50px 0;
+}
+#conference h2{
+    font-size: 50px;
+    font-weight: 300;
+}
+#conference p{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+#encrypt{
+    background-color: #111
+}
+#encrypt .encrypted_img,
+#encrypt .encrypted_txt{
+    width: 50%;
+}
+#encrypt .encrypted_img{
+    text-align: center;
+}
+#encrypt{
+    padding: 50px 0;
+}
+#encrypt .encrypted_txt{
+    padding-left: 50px;
+}
+#encrypt h2{
+    font-size: 50px;
+    font-weight: 300;
+    color: white;
+}
+#encrypt .encrypted_txt h2 span{
+    color: #25d366;
+}
+#encrypt p{
+    font-size: 18px;
+    margin: 10px 0;
+    color: white;
+}
+#encrypt .encrypted_txt .learn_more{
+    color: white
+}
+#encrypt .encrypted_txt .learn_more:hover{
+    color: #25d366;
+}
+
+
+#group .group_txt,
+#group .group_img{
+    width: 50%;
+}
+#group .group_img{
+    text-align: center;
+    position: relative;
+}
+#group{
+    padding: 50px 0;
+    position: relative;
+}
+#group h2{
+    font-size: 50px;
+    font-weight: 300;
+    color: black;
+}
+#group p{
+    font-size: 18px;
+    margin: 10px 0;
+    color: black;
+}
+#group .group_img .float_img{
+    position: absolute;
+    top: 90px;
+    right: 100px;
+}
+
+
+#express .express_img,
+#express .express_txt{
+    width: 50%;
+}
+#express .express_img{
+    text-align: center;
+    position: relative;
+}
+#express{
+    padding: 50px 0;
+    position: relative;
+}
+#express h2{
+    font-size: 50px;
+    font-weight: 300;
+    color: black;
+}
+#express p{
+    font-size: 18px;
+    margin: 10px 0;
+    color: black;
+}
+#express .express_img .blush_float{
+    position: absolute;
+    top: 90px;
+    right: 100px;
+}
+
+
+#business .business_txt,
+#business .business_img{
+    width: 50%;
+}
+#business .business_img{
+    text-align: center;
+}
+#business{
+    padding: 50px 0;
+    position: relative;
+}
+#business h2{
+    font-size: 50px;
+    font-weight: 300;
+    color: black;
+}
+#business p{
+    font-size: 18px;
+    margin: 10px 0;
+    color: black;
+}
+
+
+#last_part{
+    background-color: #111;
+    padding: 25px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+#last_part nav{
+    width: 100%;
+    display: flex;
+}
+.part-5,
+.part-4,
+.part-3,
+.part-2,
+.part-1{
+    display: inline-block;
+}
+
+.part-1 div ul li img{
+    width: 130px;
+}
+#last_part .part-1 .button::before{
+    background-color: white !important;
+}
+
+#last_part .part-1 .button{
+    border: none;
+}
+
+#last_part .part-1 .button:hover{
+    color: black;
+}
+#last_part .part-5 ul,
+#last_part .part-4 ul,
+#last_part .part-3 ul,
+#last_part .part-2 ul{
+    list-style: none;
+    text-align: center;
+    line-height: 40px;
+    padding: 0px 30px 10px 30px;
+}
+#last_part ul li p{
+    color: white;
+    text-align: center;
+}
+#last_part nav .part-5 ul li,
+#last_part nav .part-4 ul li,
+#last_part nav .part-3 ul li,
+#last_part nav .part-2 ul li{
+    text-align: left;
+}
+#last_part nav .part-5 ul li a,
+#last_part nav .part-4 ul li a,
+#last_part nav .part-3 ul li a,
+#last_part nav .part-2 ul li a{
+    color: white;
+    padding: 20px;
+}
+
+#last_part hr{
+    color: rgba(204, 204, 204, 0.137);
+}
+/* Social part Starts */
+#last_part .social_part p{
+    display: inline-block;
+    padding-right: 40px;
+}
+#last_part .social_part p,a{
+    color: white;
+}
+
+#social a{
+    padding: 35px;
+    display: flex;
+}
+#social a span{
+    background-color: #111;
+    color: white;
+    padding: 16px 28px;
+    font-size: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+    /* width: 50px;
+    height: 50px; */
+    overflow: hidden;
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+}
+#social a span::before{
+    content: "";
+    position: absolute;
+    background-color: #25d366 !important;
+    width: 100% !important;
+    height: 80px !important;
+    border-radius: 50%;
+    border: none;
+    top: 100%;
+    bottom: auto;
+    z-index: -1;
+    left: 0;
+    transition: 0.5s !important;
+}
+#social a span:hover{
+    color: #111 !important;
+}
+#social a span:hover::before{
+    top: 0;
+    transform: scale(1.5);
+}
+
+#language{
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 20px 35px;
+}
+.language{
+    padding: 0 15px 10px 300px;
+}
+/* Social part Ends */
